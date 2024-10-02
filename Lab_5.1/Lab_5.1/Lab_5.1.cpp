@@ -20,10 +20,9 @@ int main()
     cout << "q = "; cin >> q;
 
     // Обчислення значення c за допомогою кількох викликів функції k
-    double c = (k(1 + p, q * q) - k(q * p, 1)) / (1 + k(p * p, q));
+    double c = (k(1 + p, q * q) * k(1 + p, q * q) - k(q * p, 1)) / (1 + k(p * p, q));
 
     cout << "c = " << c << endl;
-
     return 0;
 }
 
